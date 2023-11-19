@@ -1,6 +1,8 @@
 import openai
 
-openai.api_key = "key"
+unsafe = ""
+
+openai.api_key = unsafe
 def gpt(prompt):
     response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
